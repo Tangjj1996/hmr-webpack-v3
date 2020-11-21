@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Tangjj1996/hmr-webpack-v3#readme",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "commitlint": "^11.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
@@ -37,10 +39,13 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAM"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
-    "*.{js,ts}": ["eslint --fix", "prettier --write"]
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
