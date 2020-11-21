@@ -1,1 +1,5 @@
-node_modules
+# dir
+node_modules/
+
+# simple
+package-lock.json

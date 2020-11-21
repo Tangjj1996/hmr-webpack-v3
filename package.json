@@ -1,10 +1,10 @@
 {
-  "name": "@tj/hmr-webpack-v3",
-  "version": "1.0.0",
+  "name": "hmr-webpack-v3",
+  "version": "0.0.1",
   "description": "reload and update meanwhile",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,5 @@
     "url": "https://github.com/Tangjj1996/hmr-webpack-v3/issues"
   },
   "homepage": "https://github.com/Tangjj1996/hmr-webpack-v3#readme",
-  "devDependencies": {
-    "webpack": "^5.4.0",
-    "webpack-dev-middleware": "^4.0.0",
-    "webpack-hot-middleware": "^2.25.0"
-  }
+  "devDependencies": {}
 }
