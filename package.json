@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "reload and update meanwhile",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tangjj1996/hmr-webpack-v3.git"
@@ -17,5 +15,8 @@
     "url": "https://github.com/Tangjj1996/hmr-webpack-v3/issues"
   },
   "homepage": "https://github.com/Tangjj1996/hmr-webpack-v3#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "prettier": "^2.2.0"
+  }
 }
