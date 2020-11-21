@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "reload and update meanwhile",
   "main": "index.js",
+  "bin": {
+    "qqwebpack": "./lib/index.js"
+  },
   "scripts": {
     "start": "rolllup -c",
     "lint": "eslint --fix && prettier . --write"
