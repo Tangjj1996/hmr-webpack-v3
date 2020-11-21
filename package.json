@@ -3,12 +3,20 @@
   "version": "0.0.1",
   "description": "reload and update meanwhile",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "rolllup -c",
+    "lint": "eslint --fix && prettier . --write"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tangjj1996/hmr-webpack-v3.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack-cli",
+    "webpack-dev-server",
+    "webpack-hot-middler",
+    "webpack3"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -16,7 +24,23 @@
   },
   "homepage": "https://github.com/Tangjj1996/hmr-webpack-v3#readme",
   "devDependencies": {
+    "commitlint": "^11.0.0",
     "eslint": "^7.14.0",
-    "prettier": "^2.2.0"
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.2.0",
+    "rollup": "^2.33.3",
+    "typescript": "^4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAM"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": ["eslint --fix", "prettier --write"]
   }
 }
